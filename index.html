@@ -12,14 +12,360 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style type="text/css">
+			p { text-align: left;
+			}
+			.reveal section img { background:none; border:none; box-shadow:none; max-width: none; max-height: none;}
+			.reveal li {text-align: left; font-size: 55px;}
+			.reveal table {frame: box; font-size: 60px;}
+			.reveal ul { display: block; text-align: left; margin: 0 0 0 1em;}
+			.reveal h4 {text-align: left;}
+			.reveal h3 {text-align: left;}
+			.reveal h2 {text-align: left;}
+			.reveal h1 {text-align: left;}
+			.reveal div {padding: 10px;}
+			.reveal table { border-collapse: collapse; }
+			figure {position: relative; top:0px;}
+			.reveal td, th {border: 5px solid white !important;}
+
+			.reveal .lcred {
+			text-align: left;
+			font-size: 55% !important;
+			}
+				.cite {
+					font-color: blue;
+				}
+			.figt figcaption {position: absolute; left: 0px; top: -50px; text-align: center; font-size: 85%; background: rgba(0, 0, 0, 0);}
+			.figb figcaption {position: absolute; caption-side: bottom;  font-size: 85%; vertical-align: top;}
+			.figb2 figcaption {position: absolute; left: 30px ; top:525px ;  font-size: 85%; vertical-align: top;}
+			.figb3 figcaption {position: absolute; bottom:-50px;  font-size: 85%; vertical-align: top;}
+
+			.hh {font-weight:bold !important; color: cyan; font-style: italic !important;}
+			/* .container{
+				display: flex;
+				margin: 0px;
+				flex-wrap: wrap;
+				height: auto;
+
+			}
+			.col{
+				flex: 1;
+			} */
+
+			.container {
+				float: left;
+				display: flex;
+				align-items: flex-start;
+				padding: 0;
+				margin: 0;
+				margin-left: 0;
+				padding-left: 0;
+ 			 }
+
+			.col {
+				padding: 0;
+				margin: 0;
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+			.containerImage {
+				position: relative;
+			}
+			text.cite{
+				color:cyan;
+				font-size:70%;
+			}
+
+			.column {
+				width: 50%;
+				height: 100%;
+				clear: bottom;
+			}
+
+			#col3 .column {
+					width: 30%;
+					height: 100%;
+					clear: bottom;
+			}
+
+			.row:{
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			.reveal .slides section .fragment.step-fade-in-then-out {
+			opacity: 0;
+			display: none; }
+			.reveal .slides section .fragment.step-fade-in-then-out.current-fragment {
+			opacity: 1;
+			display: inline; }
+			.videoWrapper {
+			position: relative;
+			padding-bottom: 1000%; /* 16:9 */
+			height: 4000;
+			}
+			.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1000%;
+			height: auto;
+			}
+			.controls[data-state="hidden"] {
+		width: 50%;
+			}
+			.controls button:hover,
+			.controls button:focus {
+		opacity: 0.5;
+			}
+		.equation.large .MathJax {
+			font-size: 150% !important;
+			text-align: left;
+		}
+
+    </style>
+
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- Title Slide -->
+				<section>
+					<h1>Low mass binaries are bound from birth</h1>
+					<h2>Aleksey Generozov</h2>
+					<h3>Stella Offner, Kaitlin Kratter, Hagai Perets, Mike Grudic, David Guszejnov</h3>
+					<h4>University of Texas at Austin, Technion</h4>
+
+					<img align="left" src="figures_sf/logo.png" />
+					<!-- <img align="right" src="figures/logo2.png" /> -->
+					<!-- <h3 class=fragment>Collaborators: Ann-Marie Madigan, Sergei Nayakshin, Hagai Perets
+					</h3> -->
+				</section>
+
+
+				<section>
+					<h2>Understanding binary formation</h2>
+					<ul>
+						<li>Are binary stars captured? <text class=cite>(Rozner, Generozov, & Perets 2023)</text></li>
+					</ul>
+
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/core_schematic.svg" width="750" align="left">
+						</div>
+						<div class=col style="position:relative; left:40px;">
+							<img src="figures_sf/capture_schematic.svg" width="750" align="left">
+						</div>
+					</div>
+
+				</section>
+
+
+
+				<section>
+					<h2>Use existing, detailed simulations for insight</h2>
+					<div class=container>
+						<div class=col>
+							<iframe width="1680" height="945" src="https://www.youtube.com/embed/Aehqb-vDV_w?si=9Nz6WfkEnzyOMs4k?start=0&end=35&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class=col style="position:relative; left:40px;">
+							<ul>
+								<li>Gravity + MHD + feedback (winds, radiation, etc.)</li>
+								<!-- <li>Color/sizes indicate mass</li> -->
+							</ul>
+						</div>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Multiplicities in simulation (cf Guszejnov et al 2023)</h2>
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/mults1.png" width="900" align="left">
+						</div>
+						<div class=col>
+							<img src="figures_sf/mults2.png" width="900" align="left">
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>Now let's look at binary formation</h2>
+				</section>
+
+
+
+				<section>
+					<h2>Binary stars have similar ages</h2>
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/age_diffs.svg" width="900" align="left">
+						</div>
+						<div class=col style="position:relative; left:40px;">
+							<ul>
+								<li>Age differences of binaries and random pairs</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+
+				<section>
+					<h2 >And velocities</h2>
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/fig3a.svg" width="900" align="left">
+						</div>
+						<div class=col style="position:relative; left:40px;">
+							<ul>
+								<li>Angle between stars’ velocities at “First Snapshot Together” (FST)</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- <section>
+					<h2 >And velocities</h2>
+					<img src="figures_sf/angs.svg" width="900" align="left">
+				</section> -->
+<!-- 
+				<section>
+					<div style="margin: 0; padding: 0;">
+						<h2 style="margin: 0; padding: 0;">And velocities</h2>
+						<div class="container" style="display: flex; gap: 40px; align-items: flex-start;">
+							<div class="col">
+							<img src="figures_sf/angs.svg" width="900" style="display: block;"/>
+							</div>
+							<div class="col">
+							<ul>
+								<li>Angle between stars’ velocities at “First Snapshot Together” (FST)</li>
+							</ul>
+							</div>
+						</div>
+					</div>
+				</section> -->
+
+
+
+
+				<section>
+					<h2>Example binary</h2>
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/sf_dens1.png" width="900" align="left">
+						</div>
+						<div class=col style="position:relative; left:40px;">
+							<img src="figures_sf/sf_dens3.png" width="900" align="left">
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Example binary</h2>
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/sf_dens4.png" width="900" align="left">
+						</div>
+						<div class=col style="position:relative; left:40px;">
+							<img src="figures_sf/sf_dens5.png" width="900" align="left">
+						</div>
+					</div>
+				</section>
+
+					<section>
+					<h2>Example binary</h2>
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/fig1_example1b.svg" width="900" align="left">
+						</div>
+					</div>
+				</section>
+
+
+						
+				<section>
+					<h2>Most binaries form bound</h2>
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/ens.svg" width="900" align="left">
+						</div>
+						<div class=col style="position:relative; left:40px;">
+							<ul>
+								<li>Blue = No gas in PE </li>
+								
+								<li>Orange = Gas in PE </li>
+								
+								<li class="fragment">~70-80% of binaries are bound from birth</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>Mass dependence</h2>
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/fig2b.svg" width="900" align="left">
+						</div>
+					</div>		
+				</section>
+
+				<section>
+					<h2>Mass dependence</h2>
+					<div class=container>
+						<!-- <div class=col>
+							<img src="figures_sf/ex_fig1.svg" width="900" align="left">
+						</div> -->
+						<div class=col>
+							<img src="figures_sf/ex_fig2.svg" width="1100" align="left">
+						</div>
+					</div>		
+				</section>
+
+				<section>
+				<h2>Conclusions</h2>
+					<ul>
+						<li> Most low mass binaries are born bound in detailed simulation of star forming cluster.</li>
+						<li>Capture/exchange are sub-dominant.</li>
+						<li>Implication for protoplanetary disks and mass function</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fate of binaries</h2>
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/bin_inspiral.png" width="900" align="left">
+						</div>
+				</section>
+
+				<section>
+					<h2>Fate of binaries</h2>
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/schema.svg" width="900" align="left">
+						</div>
+				</section>
+
+				<section>
+					<h2>Fate of binaries</h2>
+					<div class=container>
+						<div class=col>
+							<img src="figures_sf/ex_fig6.svg" width="900" align="left">
+						</div>
+				</section>
+
+
+
 			</div>
 		</div>
+
+		<section>
+				
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
@@ -30,10 +376,30 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
-				hash: true,
+				slideNumber:true,
+				width: 1920,
+				height: 1080,
+				// Factor of the display size that should remain empty around the content
+				margin: 0.03,
+				// Bounds for smallest/largest possible scale to apply to content
+				minScale: 0.2,
+				maxScale: 1.5,
+				history: true,
+				transition: 'none',
+				progress:false,
+				math: {
+					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+				dependencies: [
+				    { src: 'plugin/math/math.js', async: true },
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					// { src: 'plugin/math/math.js', async: true }
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				]
 			});
 		</script>
 	</body>
