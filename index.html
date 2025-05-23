@@ -22,7 +22,7 @@
 			.reveal ul { display: block; text-align: left; margin: 0 0 0 1em;}
 			.reveal h4 {text-align: left;}
 			.reveal h3 {text-align: left;}
-			.reveal h2 {text-align: left;}
+			.reveal h2 {margin-left:0; text-align: left;  text-indent: .2em;} 
 			.reveal h1 {text-align: left;}
 			.reveal div {padding: 10px;}
 			.reveal table { border-collapse: collapse; }
@@ -52,6 +52,7 @@
 			.col{
 				flex: 1;
 			} */
+
 
 			.container {
 				float: left;
@@ -125,6 +126,20 @@
 			font-size: 150% !important;
 			text-align: left;
 		}
+		.video-slide {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		.video-slide iframe {
+			flex-shrink: 0;
+			width: 1000px;
+			height: 1000px;
+		}
+
+		.video-slide .text-col {
+			margin-left: 40px;
+		}
 
     </style>
 
@@ -168,7 +183,7 @@
 				<section>
 					<h2>Use existing, detailed simulations for insight</h2>
 					<div class=container>
-						<div class=col>
+						<div class=col style="float: left;">
 							<iframe width="1680" height="945" src="https://www.youtube.com/embed/Aehqb-vDV_w?si=9Nz6WfkEnzyOMs4k?start=0&end=35&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</div>
 						<div class=col style="position:relative; left:40px;">
@@ -178,6 +193,23 @@
 							</ul>
 						</div>
 					</div>
+				</section>
+
+				<section>
+				<h2>Use existing, detailed simulations for insight</h2>
+				<div class="video-slide">
+					<iframe 
+					src="https://www.youtube.com/embed/Aehqb-vDV_w?start=0&end=35&autoplay=1&mute=1&rel=0" 
+					title="YouTube video player"
+					frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+					</iframe>
+					<div class="text-col">
+					<ul>
+						<li>Gravity + MHD + feedback (winds, radiation, etc.)</li>
+					</ul>
+					</div>
+				</div>
 				</section>
 
 
@@ -215,14 +247,14 @@
 
 
 				<section>
-					<h2 >And velocities</h2>
+					<h2>And velocities</h2>
 					<div class=container>
 						<div class=col>
 							<img src="figures_sf/fig3a.svg" width="900" align="left">
 						</div>
 						<div class=col style="position:relative; left:40px;">
 							<ul>
-								<li>Angle between stars’ velocities at "Initial Snapshot Together”</li>
+								<li>Angle between stars’ velocities at<br/>Initial Snapshot Together</li>
 							</ul>
 						</div>
 					</div>
